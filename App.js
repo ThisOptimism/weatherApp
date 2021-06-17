@@ -4,16 +4,11 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import One from './components/One'
 import Two from './components/Two'
+import Three from './components/Three'
 
 
 
-function Three() {
-  return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Three</Text>
-    </View>
-  );
-}
+
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +17,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Profiles" component={One} />
-        <Tab.Screen name="Settings" component={Two} />
+        <Tab.Screen name="Weather" component={Two} />
         <Tab.Screen name="Profile" component={Three} />
       </Tab.Navigator>
     </NavigationContainer>
