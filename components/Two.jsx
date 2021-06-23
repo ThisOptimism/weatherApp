@@ -10,74 +10,14 @@ import {
   TouchableHighlight,
 } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import cityData  from '../cities'
 
 export default function Two() {
   const [list, setList] = React.useState([]);
   const [newAlert, setNewAlert] = React.useState(0);
   const [alertMessage, setAlertMessage] = React.useState("");
   const [refresh, setRefresh] = React.useState(false);
-  const [cities, setCities] = React.useState([
-    {
-      name: "Berlin",
-      country: "Germany",
-    },
-    {
-      name: "Lisbon",
-      country: "Portugal",
-    },
-    {
-      name: "Moscow",
-      country: "Russia",
-    },
-    {
-      name: "Munich",
-      country: "Germany",
-    },
-    {
-      name: "Hamburg",
-      country: "Germany",
-    },
-    {
-      name: "Berlin",
-      country: "Germany",
-    },
-    {
-      name: "Münster",
-      country: "Germany",
-    },
-    {
-      name: "Rostock",
-      country: "Germany",
-    },
-    {
-      name: "Konstanz",
-      country: "Germany",
-    },
-    {
-      name: "Dublin",
-      country: "Ireland",
-    },
-    {
-      name: "Rome",
-      country: "Italy",
-    },
-    {
-      name: "Amsterdam",
-      country: "Netherlands",
-    },
-    {
-      name: "Oslo",
-      country: "Norway",
-    },
-    {
-      name: "london",
-      country: "UK",
-    },
-    {
-      name: "Sydney",
-      country: "Australia",
-    },
-  ]);
+  const [cities, setCities] = React.useState(cityData)
 
   const loadNewTemps = () => {
     setList([]);
@@ -162,20 +102,6 @@ export default function Two() {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" />
-      <Text
-        style={{
-          width: "100%",
-          paddingTop: 40,
-          paddingBottom: 15,
-          backgroundColor: "black",
-          color: "white",
-          textAlign: "center",
-          fontWeight: "bold",
-        }}
-      >
-        My Weather 🌞
-      </Text>
       <FlatList
         data={list}
         style={{ width: "100%" }}

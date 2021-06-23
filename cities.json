@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Berlin",
+    "country": "Germany"
+  },
+  {
+    "name": "Lisbon",
+    "country": "Portugal"
+  },
+  {
+    "name": "Moscow",
+    "country": "Russia"
+  },
+  {
+    "name": "Munich",
+    "country": "Germany"
+  },
+  {
+    "name": "Hamburg",
+    "country": "Germany"
+  },
+  {
+    "name": "Berlin",
+    "country": "Germany"
+  },
+  {
+    "name": "Münster",
+    "country": "Germany"
+  },
+  {
+    "name": "Rostock",
+    "country": "Germany"
+  },
+  {
+    "name": "Konstanz",
+    "country": "Germany"
+  },
+  {
+    "name": "Dublin",
+    "country": "Ireland"
+  },
+  {
+    "name": "Rome",
+    "country": "Italy"
+  },
+  {
+    "name": "Amsterdam",
+    "country": "Netherlands"
+  },
+  {
+    "name": "Oslo",
+    "country": "Norway"
+  },
+  {
+    "name": "london",
+    "country": "UK"
+  },
+  {
+    "name": "Sydney",
+    "country": "Australia"
+  }
+]

@@ -69,20 +69,6 @@ function Three() {
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" />
-      <Text
-        style={{
-          width: "100%",
-          paddingTop: 40,
-          paddingBottom: 15,
-          backgroundColor: "black",
-          color: "white",
-          textAlign: "center",
-          fontWeight: "bold",
-        }}
-      >
-        My Weather 🌞
-      </Text>
       <View style={{ alignItems: "center", width: "90%" }}>
         <Text
           style={{

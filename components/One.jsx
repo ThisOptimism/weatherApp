@@ -29,61 +29,17 @@ const styles = StyleSheet.create({
 });
 
 export default function One() {
-  const [names, setNames] = React.useState(data);
-  const [refresh, setRefresh] = React.useState(false);
-
-  const refreshData = () => {
-    setRefresh(true);
-    setNames([
-      { name: "updated", image: "https://i.pravatar.cc/300?img=50" },
-      { name: "hello", image: "https://i.pravatar.cc/300?img=2" },
-      { name: "new", image: "https://i.pravatar.cc/300?img=66" },
-    ]);
-    setRefresh(false);
-  };
-
   return (
     <View
       style={{
         flex: 1,
+        
         justifyContent: "center",
         alignItems: "center",
-        paddingTop: 40,
         backgroundColor: "#fff",
       }}
     >
-      <Text style={{fontWeight: 'bold', fontSize: 32}}>Profiles</Text>
-      <FlatList
-        refreshing={refresh}
-        onRefresh={refreshData}
-        style={{ width: "100%" }}
-        data={names}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item, index }) => {
-          return (
-            <View
-              style={[
-                styles.rowStyle,
-                index % 2 === 0 ? styles.itemEven : styles.itemOdd,
-              ]}
-            >
-              <Image style={styles.image} source={{ uri: item.image }} />
-
-              <Text
-                style={{
-                  marginLeft: 25,
-                  lineHeight: 50,
-                  fontWeight: "bold",
-                  color: "blue",
-                  opacity: 0.75,
-                }}
-              >
-                {item.name}
-              </Text>
-            </View>
-          );
-        }}
-      />
+      <Text style={{fontSize: 40, fontWeight: 'bold'}}>Weather App</Text>
     </View>
   );
 }
